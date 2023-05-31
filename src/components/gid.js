@@ -12,6 +12,9 @@ export default function Grid(){
         setState((prevState)=>!prevState)
         console.log(state)
     }
+    function changeImage(ul){
+        setActiveImage(ul)
+    }
     return(
         <div className="main">
             {data.map((el)=>
@@ -26,7 +29,9 @@ export default function Grid(){
             active={state}
             />
             <Gallery
-            Gallery={data}
+            gallery={data}
+            changeImage={changeImage}
+            state={state}
             />
         </div>
     )
