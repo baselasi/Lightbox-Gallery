@@ -1,8 +1,14 @@
 .main{
     display: grid;
-    width: 100%;    
+    width: 70%;    
     height: 100%;
     grid-template-columns: auto auto auto;
+    position: absolute;
+    left: 15%;
+}
+.image{
+    margin: 0.5rem;
+    border-radius: 20px;
 }
 html,body{
     height: 100%;
@@ -18,4 +24,22 @@ html,body{
     height: 50%;
     top: 25%;
     left: 35%;
+}
+.gallery{
+    position: absolute;
+    bottom: 3%;
+    left:15%;
+    height: 15%;
+    width: 70%;
+    display: flex;
+}
+.modal-continer{
+    width: 100%;
+    height: 100%;
+
+}
+
+.img{
+    height: 100%;
+    width: 10%;
 }
