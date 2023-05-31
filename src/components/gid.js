@@ -5,16 +5,18 @@ import Modal from "./modal";
 export default function Grid(){
     const [images,setImges] = React.useState([data])
     const [state, setState] = React.useState(false)
-    function handelClcik(){
-        setState(true)
-        console.log(state)
+    const [activeImage, setActiveImage] = React.useState("")
+    function handelClcik(url){
+        setActiveImage(url)
     }
     console.log(data)
-   
+    
     return(
         <div className="main">
-            {data.map((el)=><div style={{backgroundImage:`url(${el})`}} onClick={handelClcik}>fasf</div>)}
-            <Modal/>
+            {data.map((el)=><div style={{backgroundImage:`url(${el})`}} onClick={()=>handelClcik(el)}>fasf</div>)}
+            <Modal
+            url={activeImage}
+            />
         </div>
     )
 }
