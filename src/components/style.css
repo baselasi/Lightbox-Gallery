@@ -20,17 +20,17 @@ html,body{
 }
 .modal{
     position: absolute;
-    width: 30%;
+    width: 40%;
     height: 50%;
     top: 25%;
-    left: 35%;
+    left: 30%;
 }
 .gallery{
     position: absolute;
     bottom: 3%;
     left:15%;
-    height: 15%;
-    width: 70%;
+    height: 10%;
+    width: 80%;
     display: flex;
 }
 .modal-continer{
