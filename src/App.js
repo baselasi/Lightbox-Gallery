@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Grid from './components/gid';
+import Grid from './components/grid';
 function App() {
   return (
     <Grid/>
