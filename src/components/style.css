@@ -45,7 +45,6 @@ html,body{
 
 .img{
     background-size: contain;
-    background-attachment: fixed;
     height: 100%;
     width: 100%;
     
